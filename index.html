@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Slider</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+       
+
+        .testimonial-quote {
+        line-height: 1.6;
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next {
+        margin: 10 20px; /* Adds horizontal margin */
+         }
+
+
+
+         .testimonial-card {
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 25px;
+            
+            min-height: 400px;
+            max-height: 400px;
+            max-width: 600px; /* Optional for setting fixed width */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .testimonial-quote {
+            font-size: 1.25rem;
+            color: #333;
+            font-style: italic;
+            padding-bottom: 30px;
+        }
+
+        .testimonial-name {
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 10px auto;
+            border: 3px solid rgb(112, 198, 232);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgb(46, 176, 227);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-2">TESTIMONIALS</h2>
+        <hr class="mx-auto" style="width: 150px; border-top: 5px solid rgb(73, 164, 243);">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-card mx-auto">
+                        <p class="testimonial-quote">
+                            <i class="bi bi-quote"></i> <span class="testimonial-quote-icon">&#10078;</span> If you are looking to buy a property, you will find a better deal with us. Our knowledge of the real estate sector is extensive, and we are very professional and helpful.
+                        </p>
+                        <img src="https://via.placeholder.com/80" alt="Profile Picture" class="testimonial-img">
+                        <p class="testimonial-name">Sharat Goyal</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto">
+                        <p class="testimonial-quote">
+                            <i class="bi bi-quote"></i> <span class="testimonial-quote-icon">&#10078;</span> Exceptional service and support! The team was very professional and guided me throughout the process with ease and efficiency.
+                        </p>
+                        <img src="https://via.placeholder.com/80" alt="Profile Picture" class="testimonial-img">
+                        <p class="testimonial-name">Ananya Singh</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto">
+                        <p class="testimonial-quote">
+                            <i class="bi bi-quote"></i> <span class="testimonial-quote-icon">&#10078;</span> Highly recommend their services. The attention to detail and customer focus is unparalleled. A great experience overall.
+                        </p>
+                        <img src="https://via.placeholder.com/80" alt="Profile Picture" class="testimonial-img">
+                        <p class="testimonial-name">Rohit Sharma</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
